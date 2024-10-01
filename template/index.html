@@ -1,34 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Desert Banjo</title>
-    <div class="grid-container">
-            <header class="header">
-                <div class="brand">
-                    <a href="index.html">Desert Banjo</a>
-                </div>
-                <div class="header-links">
-                    <a href="cart.html">Cart</a>
-                    <a href="signin.html">Sign In</a>
-                </div>
-            </header>
+    <style>
+        ul.products {
+            list-style-type: none; /* this will get rid of the html li marker which messes with the image*/
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 150px; /* Adjust image size */
+        }
+    </style>
+</head>
 <body>
-    <div>
-        <aside>
-            Shopping Categories
-        </aside>
-        <main>
+    <div class="grid-container">
+        <header class="header">
+            <div class="brand">
+                <button onclick="openMenu()">&#9776;</button>
+                <a href="index.html">Desert Banjo</a>
+            </div>
+            <div class="header-links">
+                <a href="cart.html">Cart</a>
+                <a href="signin.html">Sign In</a>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <h3>Shopping Categories</h3>
+            <button class="sidebar-close-button" onclick="closeMenu()">x</button>
             <ul>
-                <li>Product 1</li>
-                <li>Product 2</li>
-                <li>Product 3</li>
-                <li>Product 4</li>
-                <li>Product 5</li>
+                <li><a href="index.html">Pants</a></li>
+                <li><a href="index.html">Shirts</a></li>
             </ul>
+        </aside>
+
+        <main>
+            <div class="content">
+                <ul class="products">
+                    <li>
+                        <div class="product">
+                            <img class="product-image" src="images/d1.jpg" alt="Product"/>
+                            <div class="product-name">
+                                <a href="product.html"> Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">Nike</div>
+                            <div class="product-price">$60</div>
+                            <div class="product-rating">4.5 Stars (10 reviews)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img class="product-image" src="images/d1.jpg" alt="Product"/>
+                            <div class="product-name">
+                                <a href="product.html"> Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">Nike</div>
+                            <div class="product-price">$60</div>
+                            <div class="product-rating">4.5 Stars (10 reviews)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img class="product-image" src="images/d1.jpg" alt="Product"/>
+                            <div class="product-name">
+                                <a href="product.html"> Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">Nike</div>
+                            <div class="product-price">$60</div>
+                            <div class="product-rating">4.5 Stars (10 reviews)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img class="product-image" src="images/d1.jpg" alt="Product"/>
+                            <div class="product-name">
+                                <a href="product.html"> Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">Nike</div>
+                            <div class="product-price">$60</div>
+                            <div class="product-rating">4.5 Stars (10 reviews)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img class="product-image" src="images/d1.jpg" alt="Product"/>
+                            <div class="product-name">
+                                <a href="product.html"> Slim Shirt</a>
+                            </div>
+                            <div class="product-brand">Nike</div>
+                            <div class="product-price">$60</div>
+                            <div class="product-rating">4.5 Stars (10 reviews)</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </main>
+
         <footer>
             &copy; 2022 Desert Banjo
         </footer>
+    </div>
+
+    <script>
+        function openMenu() {
+            document.querySelector(".sidebar").classList.add("open");
+        }
+
+        function closeMenu() {
+            document.querySelector(".sidebar").classList.remove("open");
+        }
+    </script>
 </body>
-</div>
 </html>
