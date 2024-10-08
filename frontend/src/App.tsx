@@ -35,10 +35,10 @@ function App() {
         </aside>
 
         <main className ="main">
-            <Router>
+            <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/catalog" element={<Products/>}/>
-            </Router>
+            </Routes>
         </main>
 
         <footer>
