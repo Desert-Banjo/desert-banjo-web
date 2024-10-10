@@ -2,11 +2,13 @@ html {
   font-size: 1rem;
   box-sizing: border-box;
 }
+
 body {
   font: 1.6rem Helvetica;
   height: 100vh;
   margin: 0;
 }
+
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -17,6 +19,7 @@ body {
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
 }
+
 .header {
   grid-area: header;
   background-color: #203040;
@@ -26,12 +29,14 @@ body {
   align-items: center;
   padding: 0.5rem;
 }
+
 .brand a {
   color: #ffffff;
   font-size: 3rem;
   font-weight: bold;
   text-decoration: none;
 }
+
 .brand button {
   font-size: 3rem;
   padding: 0.5rem;
@@ -66,17 +71,21 @@ body {
   right: 0.5rem;
   top: 1.5rem;
 }
+
 .header-links a {
   color: #ffffff;
   text-decoration: none;
   padding: 1rem;
 }
+
 .header-links a:hover {
   color: #ff8000;
 }
+
 .main {
   grid-area: main 
 }
+
 .footer {
   grid-area: footer;
   background-color: #203040;
@@ -85,9 +94,33 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 a {
   text-decoration: none;
 }
+
 a:hover {
   color: #ff8000;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content-margined {
+  margin: 1rem;
+}
+
+.table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: #f0f0f0;
 }
