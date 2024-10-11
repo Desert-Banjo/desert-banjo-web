@@ -166,3 +166,10 @@ input {
   border: 0.1rem #c0c0c0 solid;
   border-radius: 0.5rem;
 }
+.unshipped {
+  color: red;
+}
+
+.shipped {
+  color: green;
+}

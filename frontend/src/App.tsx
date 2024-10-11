@@ -8,6 +8,7 @@ import Orders from './Orders/Orders';
 import OrderDetail from './Orders/OrderDetail';
 import Payment from './Payment/Payment';
 import CheckoutSteps from './Payment/CheckoutSteps';
+import Fulfillment from './Fullfillment/data';
 
 function App() {
   const openMenu = () => {
@@ -29,6 +30,8 @@ function App() {
                 <Link to="/catalog">Catalog</Link>
                 <Link to="/orders">Orders</Link>
                 <Link to="/Payment">Payment</Link>
+                <Link to="/Fullfillment">Fullfillment</Link>
+
             </div>
         </div>
 
@@ -49,6 +52,8 @@ function App() {
                 <Route path="/order/:id" element={<OrderDetail/>}></Route>
                 <Route path="payment" element={<Payment/>}></Route>
                 <Route path="checkout steps" element={<CheckoutSteps/>}></Route>
+                <Route path="Fullfillment" element={<Fulfillment/>}></Route>
+
                
             </Routes>
         </main>
