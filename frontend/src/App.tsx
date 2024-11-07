@@ -11,12 +11,14 @@ import CheckoutSteps from './Payment/CheckoutSteps';
 import Fulfillment from './Fullfillment/data';
 
 function App() {
+
   const openMenu = () => {
     document.querySelector(".sidebar")?.classList.add("open");
   }
   const closeMenu = () => {
     document.querySelector(".sidebar")?.classList.remove("open");
   }
+  
   return (
     <Router>
     <div className="grid-container">
